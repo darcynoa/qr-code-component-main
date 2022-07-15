@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $lightGrey;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 85%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0.25rem 2rem;
+  text-align: center;
+
+  &__img {
+    width: 93%;
+    border-radius: 0.8rem;
+  }
+
+  &__header,
+  &__desc {
+    font-family: $typeface;
+  }
+
+  &__header {
+    width: 80%;
+    font-weight: $boldWeight;
+    font-size: 1.25rem;
+    color: $darkBlue;
+  }
+
+  &__desc {
+    width: 83%;
+    font-size: $paragraph;
+    font-weight: $regularWeight;
+    color: $grayishBlue;
+  }
+}
